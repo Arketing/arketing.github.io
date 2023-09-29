@@ -10,6 +10,10 @@ header {
   padding: 1rem;
 }
 
+.name {
+  text-align: center;
+}
+
 main {
   padding: 1rem;
 }
@@ -30,3 +34,11 @@ footer {
   text-align: center;
 }
 
+.timer-container {
+  text-align: center;
+}
+
+.timer {
+  font-size: 3rem;
+  font-weight: bold;
+}
