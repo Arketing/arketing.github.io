@@ -4,13 +4,22 @@
     <title>ArkInt AI</title>
     <style>
         body {
+            background-image: url('./media/index_bg.jpg');
             font-family: Arial, sans-serif;
+            font-size: 24px;
             margin: 0;
+            color: white;
             padding: 0;
             background-color: #f0f0f0;
         }
+        a:link {
+          color: white;
+        }
+        a:visited {
+          color: white;
+        }
         .header, .footer {
-            background-color: #333;
+            background-color: black;
             color: #fff;
             padding: 10px;
             text-align: center;
@@ -32,31 +41,32 @@
         <h1 id="title">ArkInt AI</h1>
     </div>
     <div class="content">
-        <h2>Our Services</h2>
-        <p>AI automation and integration software </p>
-        <p>Information and marketing campaigns on social media</p>
-        <p>Business software integration and verification</p>
-        <p>Software and infrastructure security testing</p>
-        <h2>Our Team</h2>
-        <div id="team"></div>
+        <h2>Services</h2>
+        <b><ul>
+          <li>AI automation and integration software </li>
+          <li>Information and marketing campaigns on social media</li>
+          <li>Business software integration and verification</li>
+          <li>Software and infrastructure security testing</li>
+          </ul></b>
         <h2>Contact Us</h2>
-        <p>For more information, please contact us over LinkedIn</p>
+        <b class="content">For more information, please contact us over LinkedIn</b>
+        <h2>Team</h2>
+        <div id="team"></div>
     </div>
     <div class="footer">
         <p>© 2023 ArkInt AI</p>
     </div>
     <script>
-        document.getElementById('title').textContent += ' - making the easy things easy and the hard things possible';
         var team = [
-            {name: 'Rodrigo Ferreira', linkedin: 'https://linkedin.com/in/rodrigolf080'},
-            {name: 'Rogerio Soares', linkedin: 'https://linkedin.com/in/rogerio-barros-soares'},
+            {name: 'Rodrigo Ferreira', linkedin: 'https://linkedin.com/in/rodrigolf080', github: 'https://github.com/rodfer0x80'},
+            {name: 'Rogerio Soares', linkedin: 'https://linkedin.com/in/rogerio-barros-soares', github: 'https://github.com/RogerioSoares96'},
             // add more team members here
         ];
         var teamDiv = document.getElementById('team');
         team.forEach(function(member) {
             var div = document.createElement('div');
             div.className = 'team-member';
-            div.innerHTML = '<h3>' + member.name + '</h3><p><a href="' + member.linkedin + '">LinkedIn</a></p>';
+          div.innerHTML = '<h3>' + member.name + '</h3><p><a href="' + member.linkedin + '">LinkedIn</a></p>' + '<p><a href="' + member.github + '">Github</a></p>';
             teamDiv.appendChild(div);
         });
     </script>
