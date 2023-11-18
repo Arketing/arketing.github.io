@@ -1,0 +1,31 @@
+body {
+    background-image: url('./media/index_bg.jpg');
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    margin: 0;
+    color: white;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+a:link, a:visited {
+    color: white;
+}
+
+.header, .footer {
+    background-color: black;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.content {
+    margin: 15px;
+}
+
+.team-member {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
